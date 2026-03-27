@@ -4,7 +4,7 @@ public class Invoice {
     private String invoiceId;
     private String reservationId;
     private double amount;
-    private String status; // PAID / UNPAID
+    private InvoiceStatus status; // PAID / UNPAID
 
     public Invoice() {
     }
@@ -19,13 +19,13 @@ public class Invoice {
     public String getInvoiceId() { return invoiceId; }
     public String getReservationId() { return reservationId; }
     public double getAmount() { return amount; }
-    public String getStatus() { return status; }
+    public InvoiceStatus getStatus() { return status; }
 
     public static class Builder {
         private String invoiceId;
         private String reservationId;
         private double amount;
-        private String status;
+        private InvoiceStatus status;
 
         public Builder setInvoiceId(String invoiceId) {
             this.invoiceId = invoiceId;
@@ -42,7 +42,7 @@ public class Invoice {
             return this;
         }
 
-        public Builder setStatus(String status) {
+        public Builder setStatus(InvoiceStatus status) {
             this.status = status;
             return this;
         }

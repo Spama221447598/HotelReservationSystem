@@ -53,7 +53,7 @@ public class Hotel {
             return this;
         }
 
-        public Builder setHotelId(HotelStatus hotelStatus) {
+        public Builder setStatus(HotelStatus hotelStatus) {
             this.hotelStatus = hotelStatus;
             return this;
         }

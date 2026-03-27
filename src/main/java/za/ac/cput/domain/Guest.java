@@ -24,6 +24,16 @@ public class Guest {
     public String getName() { return guestName; }
     public String getEmail() { return guestEmail; }
 
+    @Override
+    public String toString() {
+        return "Guest{" +
+                "guestId='" + guestId + '\'' +
+                ", guestName='" + guestName + '\'' +
+                ", guestPhone='" + guestPhone + '\'' +
+                ", guestEmail='" + guestEmail + '\'' +
+                '}';
+    }
+
     public static class Builder {
         private String guestId;
         private String guestName;
